@@ -8,3 +8,6 @@ Attempting to make a text app
 - [ ] Let users add friends
 - [ ] Settings!
 ###### Make take a while since I'm new to HTML, SCSS and JS
+
+
+![Login page](https://i.imgur.com/U8IYZlJ.png)
