@@ -7,9 +7,13 @@
     "start": "electron ."
   },
   "keywords": [],
-  "author": "",
+  "author": "rushiah",
   "license": "ISC",
   "devDependencies": {
     "electron": "^16.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rushiah/Token.git"
   }
 }
