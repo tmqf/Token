@@ -1,5 +1,5 @@
 # Token
-Attempting to make a text app for fun!
+Attempting to make a text app
 
 # Todo
 - [ ] Finish the GUI
