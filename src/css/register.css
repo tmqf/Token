@@ -93,7 +93,7 @@ body {
           box-sizing: border-box;
   color: White;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 18.5%;
 }
 
 .register-container .register-form {
@@ -103,6 +103,7 @@ body {
   border-radius: 1em;
   display: inline-block;
   width: 25%;
+  padding-bottom: .9em;
 }
 
 .register-container .submitBtn {
