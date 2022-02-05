@@ -102,7 +102,7 @@ body {
   border: 5px solid var(--secondary-color);
   border-radius: 1em;
   display: inline-block;
-  width: 30%;
+  width: 25%;
 }
 
 .register-container .submitBtn {
@@ -125,5 +125,10 @@ body {
   margin-bottom: .4em;
   outline: none;
   color: white;
+}
+
+.go-back {
+  text-decoration: none;
+  color: #5678dd;
 }
 /*# sourceMappingURL=register.css.map */
