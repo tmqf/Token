@@ -72,14 +72,14 @@ body {
 .sidebar-wrapper {
   background: var(--secondary-color);
   position: fixed;
-  width: 6%;
+  width: 4%;
   height: 100vh;
   top: 31px;
 }
 
 .sidebar-wrapper .sidebar-container {
   position: fixed;
-  width: 6%;
+  width: 4%;
   height: 11em;
   bottom: 0;
 }
@@ -89,8 +89,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding-top: 2em;
-  padding-left: 2em;
+  padding-top: 3em;
+  padding-left: .8em;
 }
 
 .sidebar-wrapper .sidebar-container .button-layer button {
@@ -98,14 +98,18 @@ body {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 50%;
   display: block;
   width: 50px;
   height: 50px;
 }
 
+.sidebar-wrapper .sidebar-container .button-layer button:hover {
+  background-color: #1C1D20;
+}
+
 .createBtn {
-  background-image: url("../icons/icon_settings.png");
+  background-image: url("../icons/icon_serveradd.png");
 }
 
 .settingsbtn {
@@ -124,6 +128,13 @@ body {
 
 .hero .container {
   margin: auto;
+}
+
+.hero .container p {
+  position: absolute;
+  bottom: 0;
+  left: 48.5%;
+  top: 20%;
 }
 
 .hero .container img {
