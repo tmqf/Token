@@ -42,8 +42,99 @@ body {
 }
 
 .wrapper nav ul button {
+  border: none;
+  background-color: transparent;
   display: block;
-  width: 30px;
+  width: 45px;
   height: 2em;
+}
+
+.friendbtn {
+  background-image: url("../icons/icon_friends.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.friendbtn:hover {
+  background-color: #1C1D20;
+}
+
+.notificationbtn {
+  background-image: url("../icons/icon_bell.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.notificationbtn:hover {
+  background-color: #1C1D20;
+}
+
+.sidebar-wrapper {
+  background: var(--secondary-color);
+  position: fixed;
+  width: 6%;
+  height: 100vh;
+  top: 31px;
+}
+
+.sidebar-wrapper .sidebar-container {
+  position: fixed;
+  width: 6%;
+  height: 11em;
+  bottom: 0;
+}
+
+.sidebar-wrapper .sidebar-container .button-layer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.sidebar-wrapper .sidebar-container .button-layer button {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.createBtn {
+  background-image: url("../icons/icon_settings.png");
+}
+
+.settingsbtn {
+  background-image: url("../icons/icon_settings.png");
+}
+
+.hero {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+
+.hero .container {
+  margin: auto;
+}
+
+.hero .container img {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  top: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  border-radius: 5em;
 }
 /*# sourceMappingURL=dashboard.css.map */
