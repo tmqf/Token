@@ -2,7 +2,7 @@
 Attempting to make a text app
 
 # Todo
-- [ ] Create Login, Register and Dashboard
+- [x] Create Login, Register and Dashboard
 - [ ] Database
 - [ ] Add Friends
 - [ ] Settings
