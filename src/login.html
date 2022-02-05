@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Token</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="wrapper" id="BtnWrapper">
+        <a href="#" class="logo">Token</a>
+        <nav>
+            <ul>
+                <button id="minimize" class="minBtn"></button>
+                <button id="maximize"class="maxBtn"></button>
+                <button id="close" class="exitBtn"></button>
+            </ul>
+         </nav>
+    </div>
+
+    <div class="login-container">
+        <form action="#" class="login-form">
+            <label for="email" class="email-form">EMAIL</label><br>
+            <input type="email" name="email" id="email" class="email-form-input"><br>
+            <label for="password" class="password-form">PASSWORD</label><br>
+            <input type="password" name="password" id="password"class="password-form-input"><br>
+            <input type="submit" value="Login" class="submitBtn"><br>
+            <p class="no-account-register">Don't have an account? <a href="./othersites/register.html">Click here</a></p>
+        </form>
+    </div>
+    <script src="./JS/appBar.js"></script>
+</body>
+</html>
