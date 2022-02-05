@@ -137,6 +137,11 @@ body {
   top: 20%;
 }
 
+.hero .container p span {
+  font-weight: bold;
+  color: #5678dd;
+}
+
 .hero .container img {
   position: absolute;
   bottom: 0;
