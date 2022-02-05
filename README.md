@@ -2,11 +2,10 @@
 Attempting to make a text app
 
 # Todo
-- [ ] Finish the GUI
-- [ ] Networking
-- [ ] Let users make accounts
-- [ ] Let users add friends
-- [ ] Settings!
+- [ ] Create Login, Register and Dashboard
+- [ ] Database
+- [ ] Settings
+- [ ] Add Friends
 ###### May take a while since I'm new to HTML, SCSS and JS
 
 
