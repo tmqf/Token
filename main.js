@@ -7,11 +7,11 @@ function createWindow () {
     height: 600,
     minWidth: 940,
     minHeight: 560,
+    title: "Token",
     frame: false,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: true,
-      devTools: true,
+      contextIsolation: false,
       preload: path.join(__dirname, 'preload.js')
     }
   })
