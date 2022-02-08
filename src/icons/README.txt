@@ -1,1 +1,0 @@
-In case you're here to change the button icons and such, make sure the button icons are 24x24 or close to it
