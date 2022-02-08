@@ -2,11 +2,12 @@
 Attempting to make a text app
 
 # Todo
-- [x] Create Login, Register and Dashboard
+- [ ] Create Login, Register and Dashboard
 - [ ] Database
 - [ ] Add Friends
 - [ ] Settings
 - [ ] Servers
-###### May take a while since I'm new to HTML, SCSS and JS
+###### May take a while
 
+<!--
 ![Login page](https://i.imgur.com/2USmd6H.png)
