@@ -15,6 +15,13 @@ Python 3.6+
 Git to clone
 Modules from requirements.txt
 ```
+# How to use
+```python
+git clone https://github.com/rushiah/Token
+cd Token
+python main.py
+go to browser and type 127.0.0.1:5000
+```
 
 
 <!--
