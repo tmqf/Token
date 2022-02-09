@@ -12,12 +12,14 @@
     </div>
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
-        {% for category, messages in messages %}
+        {% for category, message in messages %}
         {% if category == 'error' %}
-        <div class="wrapper" id="BtnWrapper" style="background: #eb8370;" role="alert">
+        <div class="wrapper" id="BtnWrapper" style="background: #eb8370; text-align: center; color: white; font-weight: bold;" role="alert">
+            {{ message }}
         </div>
         {% else %}
-        <div class="wrapper" id="BtnWrapper" style="background: rgb(97, 248, 97);" role="alert">
+        <div class="wrapper" id="BtnWrapper" style="background: rgb(97, 248, 97); text-align: center; color: white; font-weight: bold;" role="alert">
+            {{ message }}
         </div>
         {% endif %}
         {% endfor %}
