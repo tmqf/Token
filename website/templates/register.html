@@ -3,7 +3,7 @@
 {% block content %}
 <div class="register-container">
         <form method="POST" class="register-form">
-            <p>Account Registration</p>
+            <p class="error-message">Account Registration</p>
             <label for="username" class="username-form">USERNAME</label><br>
             <input type="text" name="username" id="username" class="username-form-input"><br>
 
@@ -19,5 +19,5 @@
             <input type="submit" value="Register" class="submitBtn"><br>
             <a class="go-back" href="login">Go back</a>
         </form>
-    </div>
+</div>
 {% endblock %}
