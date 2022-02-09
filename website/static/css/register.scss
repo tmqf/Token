@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1C1D20;
+    --secondary-color: #2b2b2b;
+    --button-color: #1f1f1f;
+    --submit-color: #636363;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+//Top Bar
+.wrapper {
+    -webkit-app-region: drag;
+    padding: 0.2em;
+    background: var(--secondary-color);
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        padding-left: 0.4em;
+    }
+}
+
+.register-container {
+    box-sizing: border-box;
+    color: White;
+    text-align: center;
+    padding-top: 15.5%;
+
+    .register-form {
+        background: var(--secondary-color);
+        margin: auto;
+        border: 5px solid var(--secondary-color);
+        border-radius: 1em;
+        display: inline-block;
+        width: 25%;
+        padding-bottom: .9em;
+    }
+
+    .submitBtn
+    {
+        padding: 0;
+        background: var(--button-color);
+        color: white;
+        border: 2px solid var(--button-color);
+        width: 30%;
+        border-radius: 2em;
+    }
+
+    .email-form, .password-form1, .password-form2, .username-form {
+        color: white;
+    }
+    
+    .email-form-input, .password-form-input1, .password-form-input2, .username-form-input {
+        background: var(--submit-color);
+        border: 2px solid var(--submit-color);
+        border-radius: 2em;
+        margin-bottom: .4em;
+        outline: none;
+        color: white;
+    }
+}
+
+.go-back {
+    text-decoration: none;
+    color: #5678dd;
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <form class="login-form", method="POST">
+        <label for="email" class="email-form">EMAIL</label><br>
+        <input type="email" name="email" id="email" class="email-form-input"><br>
+        <label for="password" class="password-form">PASSWORD</label><br>
+        <input type="password" name="password" id="password"class="password-form-input"><br>
+        <input type="submit" value="Login" class="submitBtn"><br>
+        <p class="no-account-register">Don't have an account? <a href="register">Click here</a></p>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

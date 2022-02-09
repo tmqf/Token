@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Home{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/login.css') }}"">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/register.css') }}"">
+</head>
+<body>
+    <div class="wrapper" id="BtnWrapper">
+        <a href="#" class="logo">Token</a>
+    </div>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, messages in messages %}
+        {% if category == 'error' %}
+
+        <div class="wrapper" id="BtnWrapper" style="background: #eb8370;" role="alert">
+        </div>
+        {% else %}
+        <div class="wrapper" id="BtnWrapper" style="background: rgb(97, 248, 97);" role="alert">
+        </div>
+        {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
