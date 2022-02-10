@@ -72,3 +72,18 @@ body {
     text-decoration: none;
     color: #5678dd;
 }
+
+.close-error, .close-success {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 5em;
+    border: none;
+    background-color: white;
+    background-image: url('/website/templates/icons/icon_quit.png');
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-color: rgba(68, 68, 68, 0.45);
+    }
+}

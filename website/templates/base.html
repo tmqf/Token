@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <title>{% block title %}Home{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}"">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
 </head>
 <body>
     <div class="wrapper" id="BtnWrapper">
@@ -14,12 +15,14 @@
     {% if messages %}
         {% for category, message in messages %}
         {% if category == 'error' %}
-        <div class="wrapper" id="BtnWrapper" style="background: #eb8370; text-align: center; color: white; font-weight: bold;" role="alert">
+        <div class="wrapper" id="BtnWrapperCategory" style="background: #eb8370; text-align: center; color: white; font-weight: bold;" role="alert">
             {{ message }}
+            <button class="close-error" id="close-errorbtn" style="float: left;"></button>
         </div>
         {% else %}
-        <div class="wrapper" id="BtnWrapper" style="background: rgb(97, 248, 97); text-align: center; color: white; font-weight: bold;" role="alert">
+        <div class="wrapper" id="BtnWrapperCategory" style="background: rgb(97, 248, 97); text-align: center; color: white; font-weight: bold;" role="alert">
             {{ message }}
+            <button class="close-success" id="close-errorbtn" style="float: left;"></button>
         </div>
         {% endif %}
         {% endfor %}
@@ -27,5 +30,15 @@
     {% endwith %}
     {% block content %}
     {% endblock %}
+    <script>
+        if (document.getElementById('close-errorbtn').style == 'none'){
+            return false;
+        }
+        else {
+            document.getElementById('close-errorbtn').addEventListener('click', function(){
+            document.getElementById('BtnWrapperCategory').remove()
+            });
+        };
+    </script>
 </body>
 </html>
