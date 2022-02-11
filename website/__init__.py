@@ -2,15 +2,14 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
-import string, random
+import string, random, psycopg2
 
 db = SQLAlchemy()
-DB_NAME = "database.db"
 
 def createApp():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '1'
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres URL'
     db.init_app(app)
 
     from .views import views
@@ -19,9 +18,7 @@ def createApp():
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
-    from .models import User
-
-    createDB(app)
+    from .models import Person
 
     loginManager = LoginManager()
     loginManager.login_view = 'auth.login'
@@ -29,11 +26,6 @@ def createApp():
 
     @loginManager.user_loader
     def loadUser(id):
-        return User.query.get(int(id))
+        return Person.query.get(int(id))
 
     return app
-
-def createDB(app):
-    if not path.exists('website/' + DB_NAME):
-        db.create_all(app=app)
-        print('DB has been created')
