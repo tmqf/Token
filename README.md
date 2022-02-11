@@ -7,6 +7,7 @@ Attempting to make a text app
 - [ ] Add Friends
 - [ ] Settings
 - [ ] Servers
+- [ ] Resize for phone
 ###### May take a while
 
 # Requirements so far
