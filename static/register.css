@@ -39,21 +39,18 @@ body {
   width: 20%;
   position: absolute;
   left: 45em;
-  bottom: 25em;
+  bottom: 20em;
   margin-left: 0;
   margin-right: 0;
-}
-
-.mid-container .email-form, .mid-container .password-form, .mid-container .no-account-register {
   color: white;
   font-weight: bold;
 }
 
-.mid-container .email-form a, .mid-container .password-form a, .mid-container .no-account-register a {
-  color: var(--btn-logo-color);
+.mid-container .username-form, .mid-container .email-form, .mid-container .password-form1, .mid-container .password-form2 {
+  font-weight: bold;
 }
 
-.mid-container .email-form-input, .mid-container .password-form-input {
+.mid-container .username-form-input, .mid-container .email-form-input, .mid-container .password-form-input1, .mid-container .password-form-input2 {
   border-radius: 5em;
   border: none;
   height: 22px;
@@ -74,4 +71,10 @@ body {
 .mid-container .submitBtn:active {
   background-color: var(--btn-clicked);
 }
-/*# sourceMappingURL=login.css.map */
+
+.mid-container .go-back {
+  font-weight: bold;
+  color: var(--btn-logo-color);
+  font-size: 18px;
+}
+/*# sourceMappingURL=register.css.map */

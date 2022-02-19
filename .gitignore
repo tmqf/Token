@@ -1,6 +1,11 @@
 #SCSS
 static/login.css.map
 static/login.scss
+static/register.css.map
+static/register.scss
+static/home.css.map
+static/home.scss
+
 
 #Photos
 rovergaming.jpg
