@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #313233;
+  --btn-logo-color: #f17e7e;
+  --btn-clicked: #e2b5b5;
+  //--submit-color: #636363;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar {
+    padding-bottom: .4em;
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 5em;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2em;
+        color: var(--btn-logo-color);
+
+        &:active {
+            color: var(--btn-clicked);
+        }
+    }
+}
+
+.middle-con {
+    padding-top: 20em;
+    padding-left: 10em;
+
+    .middle-text-container {
+        color: white;
+        font-size: 2em;
+
+        span {
+            color: var(--btn-logo-color);
+            font-weight: bold;
+        }
+
+        a {
+            font-weight: bold;
+            color: var(--btn-logo-color);
+
+            &:active {
+                color: var(--btn-clicked);
+            }
+        }
+    }
+
+    .goto-login {
+        display: block;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: var(--btn-logo-color);
+        border: none;
+        border-radius: 5em;
+        width: 10%;
+        height: 40px;
+        cursor: pointer;
+
+        &:active {
+            background-color: var(--btn-clicked);
+        }
+    }
+
+    .rover-smirk-gif {
+        position: absolute;
+        right: 10em;
+        bottom: 15em;
+        border-radius: 5em;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .rover-smirk-gif {
+        display: block;
+    }
+}

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #313233;
+  --btn-logo-color: #f17e7e;
+  --btn-clicked: #e2b5b5;
+  //--submit-color: #636363;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-bar {
+  padding: 1em;
+
+  .top-container {
+    float: right;
+    padding-right: 10em;
+
+    .addfriendbtn {
+      background-color: #82d68d;
+
+      &:active {
+        background-color: #76aa7d;
+      }
+    }
+
+    button {
+      background-color: var(--btn-logo-color);
+      border-radius: 6em;
+      border: none;
+      width: 80px;
+      height: 25px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+
+      &:active {
+        background-color: var(--btn-clicked);
+      }
+    }
+
+  }
+}
+
+/*
+.side-bar {
+  background-color: blue;
+  width: 10%;
+  //height: 100em; //Change this later on
+}
+*/

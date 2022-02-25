@@ -11,6 +11,7 @@ body {
   background-color: var(--primary-color);
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .top-bar {
@@ -33,34 +34,31 @@ body {
 
 .mid-container {
   text-align: center;
+}
+
+.mid-container .form-con {
+  display: inline-block;
+  margin-top: 10em;
   border: 5px solid var(--submit-color);
   background-color: var(--submit-color);
   border-radius: 3em;
   width: 20%;
-  position: absolute;
-  left: 45em;
-  bottom: 25em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.mid-container .email-form, .mid-container .password-form, .mid-container .no-account-register {
   color: white;
   font-weight: bold;
 }
 
-.mid-container .email-form a, .mid-container .password-form a, .mid-container .no-account-register a {
-  color: var(--btn-logo-color);
+.mid-container .form-con .username-form, .mid-container .form-con .email-form, .mid-container .form-con .password-form1, .mid-container .form-con .password-form2 {
+  font-weight: bold;
 }
 
-.mid-container .email-form-input, .mid-container .password-form-input {
+.mid-container .form-con .username-form-input, .mid-container .form-con .email-form-input, .mid-container .form-con .password-form-input1, .mid-container .form-con .password-form-input2 {
   border-radius: 5em;
   border: none;
   height: 22px;
   outline: none;
 }
 
-.mid-container .submitBtn {
+.mid-container .form-con .submitBtn {
   background-color: var(--btn-logo-color);
   border-radius: 5em;
   border: none;
@@ -69,9 +67,32 @@ body {
   color: white;
   font-weight: bold;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.mid-container .submitBtn:active {
+.mid-container .form-con .submitBtn:active {
   background-color: var(--btn-clicked);
 }
-/*# sourceMappingURL=login.css.map */
+
+.mid-container .form-con .go-back {
+  font-weight: bold;
+  color: var(--btn-logo-color);
+  font-size: 18px;
+}
+
+.flask-messages {
+  text-align: center;
+}
+
+.flask-messages .flask-container {
+  display: inline-block;
+  margin-top: 5em;
+  padding: 1em;
+  width: 20%;
+  color: white;
+  border-radius: 5em;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=register.css.map */
