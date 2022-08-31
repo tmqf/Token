@@ -1,5 +1,6 @@
-# Token
-Attempting to make a text app
+# Token - A Text App
+ - Attempting to make a text app
+ - Has infrequent updates
 
 # Todo
 - [ ] Create Login, Register and Dashboard
