@@ -1,3 +1,5 @@
+# REWRITE COMING IN PYNECONE
+
 # Token - A Text App
  - Attempting to make a text app
  - Has infrequent updates
