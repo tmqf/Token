@@ -1,32 +1,27 @@
-# REWRITE COMING IN PYNECONE
-
-# Token - A Text App
- - Attempting to make a text app
- - Has infrequent updates
+# Token
+This application was built using [Pynecone](https://pynecone.io/). It's my first time using it and so I thought about trying to make a text app with it.
 
 # Todo
+```
 - [ ] Create Login, Register and Dashboard
-- [x] Database
+- [ ] Database
 - [ ] Add Friends
 - [ ] Settings
-- [ ] Servers
-- [ ] Resize for phone
-###### May take a while
+```
 
-# Requirements so far
-```python
+## Requirements
+```
 Python 3.6+
-Git to clone
-Modules from requirements.txt
+NodeJS (only tested on v18.13)
 ```
-# How to use
-```python
-git clone https://github.com/rushiah/Token
-cd Token
-python main.py
-go to browser and type 127.0.0.1:5000
+## How to use
 ```
+Download requirements from requirements.txt
+Once downloaded, run the following commands
 
+> $ mkdir app_name
+> $ cd app_name
+> $ pc init
 
-<!--
-![Login page](https://i.imgur.com/2USmd6H.png)
+after doing so, download Token.py, go to app_name/app_name.py and replace all code within it with Token.py
+```
