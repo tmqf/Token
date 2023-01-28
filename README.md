@@ -23,5 +23,5 @@ Once downloaded, run the following commands
 > $ cd app_name
 > $ pc init
 
-Once ran, download Token.py and go to app_name/app_name.py and replace all code within it with Token.py
+Once ran, download Token.py, go to app_name/app_name.py and replace all code within it with Token.py
 ```
